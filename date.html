@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dates</title>
+    </head>
+    <body>
+	
+		<script> 
+			// Example 1 (Declare Date)
+			/*
+				new Date()
+				new Date(year, month, day, hours, minutes, seconds, milliseconds)
+				new Date(milliseconds)
+				new Date(date string)
+			*/
+			var d1 = new Date();
+			var d2 = new Date(2018, 11, 24, 10, 33, 30, 0);
+			var d3 = new Date(2018, 11, 24, 10, 33, 30);
+			var d4 = new Date(2018, 11, 24, 10, 33);
+			var d5 = new Date(2018, 11, 24, 10);
+			var d6 = new Date(2018, 11, 24);
+			var d7 = new Date(2018, 11);
+			var d8 = new Date(2018); // it is milliseconds, not year
+			var d9 = new Date("October 13, 2014 11:13:00");
+			var d10 = new Date(0);// 01 January 1970
+			var d11 = new Date(100000000000); // approximately 03 March 1973
+			var d12 = new Date(-100000000000); // approximately October 31 1966
+			document.write(d1.toLocaleString()+'<br/>');
+			document.write(d2.toLocaleString()+'<br/>');
+			document.write(d3.toLocaleString()+'<br/>');
+			document.write(d4.toLocaleString()+'<br/>');
+			document.write(d5.toLocaleString()+'<br/>');
+			document.write(d6.toLocaleString()+'<br/>');
+			document.write(d7.toLocaleString()+'<br/>');
+			document.write(d8.toLocaleString()+'<br/>');
+			document.write(d9.toLocaleString()+'<br/>');
+			document.write(d10.toLocaleString()+'<br/>');
+			document.write(d11.toLocaleString()+'<br/>');
+			document.write(d12.toLocaleString()+'<br/>');
+			document.write("=============================<br/>");
+			
+			// Example 2 (Change Time zone)
+			var aestTime = new Date().toLocaleString("en-US", {timeZone: "Australia/Brisbane"});
+			aestTime = new Date(aestTime);
+			document.write('AEST time: '+aestTime.toLocaleString()+'<br/>')
+
+			var asiaTime = new Date().toLocaleString("en-US", {timeZone: "Asia/Shanghai"});
+			asiaTime = new Date(asiaTime);
+			document.write('Asia time: '+asiaTime.toLocaleString()+'<br/>')
+
+			var usaTime = new Date().toLocaleString("en-US", {timeZone: "America/New_York"});
+			usaTime = new Date(usaTime);
+			document.write('USA time: '+usaTime.toLocaleString()+'<br/>')
+
+			var indiaTime = new Date().toLocaleString("en-US", {timeZone: "Asia/Kolkata"});
+			indiaTime = new Date(indiaTime);
+			document.write('India time: '+indiaTime.toLocaleString()+'<br/>')
+			
+			// Example 3
+			var d = new Date();
+			var n = d.getTimezoneOffset();
+			document.write(n + "<br/>");
+
+		</script> 
+
+
+    </body>
+</html>

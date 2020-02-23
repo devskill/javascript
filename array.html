@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test</title>
+    </head>
+    <body>
+	
+		<script> 
+			// JavaScript to illustrate map() function 
+			function func()  
+			{ 
+			  // Original array 
+			  var arr = [ 2, 56, 78, 34, 65 ]; 
+			  
+			  // new mapped array 
+			  var new_arr = arr.map(
+				function(num) { return num / 2; }
+			  ); 
+			  
+			  document.write(new_arr); 
+			  document.write("<br/>=============<br/>");
+			}  
+			func(); 
+			
+			//Output:
+			//1, 28, 39, 17, 32.5
+		</script> 
+		<script> 
+			//JavaScript to illustrate map() function 
+			function func() 
+			{ 
+				//Original array 
+				var arr = [10, 64, 121, 23]; 
+
+				//new mapped array 
+				var new_arr = arr.map(Math.sqrt); 
+				document.write(new_arr); 
+				document.write("<br/>=============<br/>");
+			} 
+			func(); 
+			
+			//Output:
+			//3.1622776601683795, 8, 11, 4.795831523312719
+		</script> 
+
+        <script type="text/javascript">
+			var array = ['geeksforgeeks', 'gfg', 'Jhon']; 
+			var iterator = array.entries();
+			for(var item of iterator)
+			{
+				document.write(item); 
+				document.write("<br/>");
+			}
+			document.write("<br/>=============<br/>");
+        </script>
+		
+		<script> 
+			// JavaScript code for every() function 
+			function ispositive(element, index, array) 
+			{ 
+				return element > 0; 
+			} 
+
+			function func() { 
+				var arr = [ 11, 89, 23, 7, 98 ]; 
+					
+				// check for positive 
+				// number 
+				var value = arr.every(ispositive); 
+				document.write(value); 
+				document.write("<br/>=============<br/>");
+			} 
+			func(); 
+			
+			//Output:
+			//true
+		</script> 
+		
+		<script> 
+			// JavaScript code for every() function 
+			function isodd(element, index, array) 
+			{ 
+				return (element % 2 == 1); 
+			} 
+
+			function func() 
+			{ 
+				var arr = [ 56, 91, 18, 88, 12 ]; 
+					
+				// check for odd number 
+				var value = arr.every(isodd); 
+				document.write(value); 
+				document.write("<br/>=============<br/>");
+			} 
+			func(); 
+			
+			//Output:
+			//false
+		</script> 
+		
+		<script> 
+			// JavaScript code for copyWithin() function 
+			function func() 
+			{ 
+				// Input array 
+				var array = [ 1, 2, 3, 4, 5, 6, 7 ]; 
+				  
+				// placing at index position 0 the element  
+				// between index 3 and 6 
+				document.write(array.copyWithin(0, 3, 6)); 
+				document.write("<br/>=============<br/>");
+			} 
+			func(); 
+			
+			//Output:
+			//4, 5, 6, 4, 5, 6, 7
+		</script> 
+
+
+    </body>
+</html>
