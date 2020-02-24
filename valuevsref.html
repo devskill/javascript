@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Value VS Reference</title>
+    </head>
+    <body>
+	
+		<script> 
+			let name1 = "jalaluddin";
+			let name2 = name1;
+			
+			document.write(name1);
+			document.write("<br/>");
+			document.write(name2);
+			document.write("<br/>");
+			
+			name1 = "arif";
+			
+			document.write(name1);
+			document.write("<br/>");
+			document.write(name2);
+			document.write("<br/>");
+			
+			let fruits = ["apple", "orange", "banana"];
+			let moreFruits = fruits;
+			
+			document.write(fruits);
+			document.write("<br/>");
+			document.write(moreFruits);
+			document.write("<br/>");
+			
+			fruits[3] = "mango";
+			fruits[4] = "coconut";
+			
+			document.write(fruits);
+			document.write("<br/>");
+			document.write(moreFruits);
+			document.write("<br/>");
+			
+			// Array, Function, or Object are reference type assignment
+			// Boolean, null, undefined, String, and Number etc are assigned by value
+		</script> 
+
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Destructuring</title>
+    </head>
+    <body>
+	
+		<script> 
+			const person = {
+			  name: 'jalaluddin',
+			  age: 38,
+			  address: 'Dhaka, Bangladesh',
+			  profession: 'SE'
+			}
+			
+			let {name, address} = person;
+			document.write(`Name is: ${name} and address is: ${address}<br/>`);
+			
+			let {name:personName, address: personAddress} = person;
+			document.write(`Person Name is: ${personName} and person address is: ${personAddress}<br/>`);
+
+			function introduce({ name, age }) {
+			  document.write(`I'm ${name} and I'm ${age} years old!<br/>`);
+			}
+
+			introduce(person);
+			
+		</script> 
+
+    </body>
+</html>
