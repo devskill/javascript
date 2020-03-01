@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+        <p>Select a color from the list.</p>
+        <select id="mySelect" onchange="main()">
+          <option value="Red">Red
+          <option value="Green">Green
+          <option value="Blue">Blue
+      </select>
+        <p id="demo"></p>
+        <script>
+        function main() {
+            var x = document.getElementById("mySelect").value;
+            document.getElementById("demo").innerHTML = "You selected: " + x;
+        }
+        </script>
+</body>
+</html>
